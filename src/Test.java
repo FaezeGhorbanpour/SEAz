@@ -22,7 +22,7 @@ class Test
             System.out.println("Sum: Failed, expected = " + expected + ", result = " + result);
         }
     }
-     private static void testSubtract()
+   private static void testSubtract()
     {
         int a = 99;
         int b = 41;
@@ -31,11 +31,32 @@ class Test
         int result = bm.subtract(a, b);
         if (result == expected)
         {
-            System.out.println("Sum: OK");
+            System.out.println("Subtract: OK");
         }
         else
         {
-            System.out.println("Sum: Failed, expected = " + expected + ", result = " + result);
+            System.out.println("Subtract: Failed, expected = " + expected + ", result = " + result);
         }
     }
+  
+
+    private static void testMultiply()
+    {
+        int a = 5;
+        int b = 9;
+        int expected = 45;
+        BasicMath bm = new BasicMath();
+        int result = bm.multiply(a, b);
+        if (result == expected)
+        {
+            System.out.println("Multiply: OK");
+        }
+        else
+        {
+            System.out.println("Multiply: Failed, expected = " + expected + ", result = " + result);
+        }
+    }
+  
+    
+
 }
